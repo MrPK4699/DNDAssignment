@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Example</title>
+    <style>
+        .draggable {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            text-align: center;
+            line-height: 100px;
+            margin: 20px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .dropzone {
+            width: 300px;
+            height: 200px;
+            border: 2px dashed #ccc;
+            margin-top: 50px;
+            text-align: center;
+            line-height: 200px;
+            background-color: #f9f9f9;
+            font-size: 18px;
+        }
+
+        .over {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="draggable" class="draggable" draggable="true">
+        Drag Me
+    </div>
+
+    <div id="dropzone" class="dropzone">
+        Drop Here
+    </div>
+
+    <script src="dnd.js"></script>
+</body>
+</html>
